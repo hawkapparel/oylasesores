@@ -1,0 +1,19 @@
+/***** Si queremos usar estilos para Slider, debemos añadir la clase .sliderFix ****/
+@import "extras/owl.carousel";
+
+//En caso usemos videos
+.owl-carousel .owl-video-play-icon{
+  background: url("../images/owl.video.play.png") no-repeat;
+}
+.owl-carousel .item-video {
+    height: 26rem;
+}
+//Fin items de videos
+
+#slider{
+  .item {
+    height: 26rem;
+    background-color: #4DC7A0;
+    padding: 1.4rem;
+  }
+}

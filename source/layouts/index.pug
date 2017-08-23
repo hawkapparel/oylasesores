@@ -1,0 +1,53 @@
+extends extends/base
+
+block header
+  include includes/header
+
+block content
+  //- url = "http://cms.movistar.com.pe"
+  - url = ""
+  .aui(style="background-color:transparent")
+    #wrapper.modulo-a
+      .contenido-no-estructurado
+        //-a partir d de aca se copia al contenido Web
+        .container(style="margin: 0 auto")
+          .content-wrapper
+
+            #NombreDelCNE
+              include sections/formulario
+              .row
+                .span6
+                  include sections/tabs
+                .span6
+                  #boxParam
+                    h3.title URL + Parametros
+                     strong.text   (COL)
+                    p#textParam.text El parámetro #[strong Col]  retorna el valor #[strong#idParam]
+
+
+              .row
+                .span6
+                  h3.title Example Scroll Position Element
+                  a.linkBtn.btn(href="#", data-id="#footer") ¡Vamos al Footer!
+                  a.linkBtn.btn(href="#", data-id="#header") ¡Vamos al Header!
+
+                .span6
+                  h3.title Example ScrollTop
+                  button#topBody.btn TopBody
+
+
+              .row
+                .span6
+                  include sections/typography
+                .span6
+                  include sections/accordeon
+
+
+              include sections/slider
+              include sections/carousel
+              include sections/boostrap
+
+
+
+block footer
+  include includes/footer
