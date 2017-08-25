@@ -750,7 +750,7 @@ div.wpcf7-response-output:before{
 	margin-top: -9px;
 }
 div.wpcf7-validation-errors{
-	background-color: #c24747;
+	background-color: #0096dc;
 }
 div.wpcf7-validation-errors:before{
 	content: "\f057";

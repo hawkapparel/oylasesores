@@ -1055,7 +1055,14 @@
     z-index: 1;
     overflow: hidden;
 }
-
+.module_team .item_list > li .item_wrapper:hover .item .team_img a img{
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
+  filter: none; /* IE 6-9 */
+}
 .module_team .items1 .item_list > li {
     width: 100%;
 }
@@ -1093,7 +1100,9 @@
   background-color: rgba(41,54,66,.45);
   z-index: 1;
 }
-
+.module-team_text{
+    color: #b9c8d5;
+}
 .module_team .team-infobox {
   position: absolute;
   bottom: 23px;
@@ -1170,6 +1179,7 @@
 .module_team .module-team_title {
     float: left;
     margin-bottom: 25px;
+    color: #ffffff;
 }
 .module_team .view_all_link {
     font-size: 16px;
@@ -1212,6 +1222,9 @@
 .module_team .view_all_link + *,
 .module_team .module-team_title + p {
     clear: both;
+}
+.module-team_title + p{
+    color: #ffffff;
 }
 .module_team .team_cover {
   transition: all .4s;
@@ -3021,7 +3034,9 @@ body .vc_pie_chart .vc_pie_chart_value{
     line-height: 65px;
     color: rgba(255,255,255, 0.2);
 }
-
+.module-services_title{
+    color: #27323d;
+}
 .gt3_services_box.to-left .services_box-front,
 .gt3_services_box.to-right .services_box-front {
     -webkit-transform: rotateY(0deg);
