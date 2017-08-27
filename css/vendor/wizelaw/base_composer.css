@@ -3299,3 +3299,6 @@ body .vc_pie_chart .vc_pie_chart_value{
     }
 }
 /* end gt3_spacing */
+.circle_photo{
+    border-radius: 50px !important;
+}
