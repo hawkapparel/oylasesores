@@ -408,15 +408,6 @@ iframe {
 	padding:0;
 }
 
-iframe {
-	vertical-align: top;
-	width:100%;
-	display:block;
-	padding:0;
-	margin:0;
-	border:0;
-}
-
 img,
 table,
 iframe {
@@ -4085,3 +4076,25 @@ input[type="submit"] {
 .pp_page .gt3-page-title {
 	display: none;
 }
+
+
+
+@media (min-width:768px){
+	.teamW{
+		width: 700px;
+		margin: 0 auto;
+	}
+
+	.twoB{
+		width: 50% !important;
+	}
+}
+
+@media (min-width:900px){
+	.teamW{
+		width: 800px;
+
+	}
+}
+
+
