@@ -839,9 +839,7 @@
 	<style type="text/css">
 		#google_translate_element{
 			display: none;
-			position: fixed;
-			right: 28px;
-			top: 64px;
+			position: absolute;
 		}
 		.showMenu{
 			display: block !important;
@@ -917,7 +915,6 @@
 											<a href="#"><i class="fa fa-google-plus" style="padding-left: 18px;"></i></a> 
 											<a href="#"><i class="fa fa-linkedin" style="padding-left: 18px;"></i></a>
 											<i class="fa fa-language btnTranslate" aria-hidden="true" style="padding-left: 18px;cursor: pointer;"></i>
-											<div id="google_translate_element"></div>
 										</span>
 									</div>
 								</div>
@@ -941,7 +938,23 @@
 							<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-1111"><a href="/oylasesores/testimonios"><span>Testimonios</span></a>
 							</li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978"><a href="/oylasesores/contacto"><span>Contáctenos</span></a></li>
+							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978">
+								<div class='bottom_header_right header_bar'>
+									<div class='wrapper'>
+										<div>
+											<span style="float: right; font-size: 16px;"> 
+												<a href="#"><i class="fa fa-facebook" style="padding-left: 18px;"></i></a> 
+												<a href="#"><i class="fa fa-twitter" style="padding-left: 18px;"></i></a> 
+												<a href="#"><i class="fa fa-google-plus" style="padding-left: 18px;"></i></a> 
+												<a href="#"><i class="fa fa-linkedin" style="padding-left: 18px;"></i></a> 
+												<i class="fa fa-language btnTranslate" aria-hidden="true" style="padding-left: 18px;cursor: pointer;"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+							</li>
 						</ul>
+						<div id="google_translate_element"></div>
 					</nav>
 				</div>
 			</div>
@@ -988,29 +1001,30 @@
 												<a href="#"><i class="fa fa-linkedin" style="padding-left: 18px;"></i></a> 
 												<i class="fa fa-language btnTranslate" aria-hidden="true" style="padding-left: 18px;cursor: pointer;"></i>
 											</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<div class='mobile_menu_container'>
-					<div class='fullwidth-wrapper'>
-						<nav class='main-menu'>
-							<ul id="menu-main-menu-3" class="menu">
-								<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-1110"><a href="/oylasesores/"><span>Inicio</span></a>
-								</li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694"><a href="/oylasesores/nosotros"><span>Nosotros</span></a></li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a href="/oylasesores/servicios"><span>Servicios</span></a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-1080"><a href="/oylasesores/clientes"><span>Clientes</span></a>
-								</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="/oylasesores/preguntasfrecuentes"><span>Preguntas Frecuentes</span></a>
-								</li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-1111"><a href="/oylasesores/testimonios"><span>Testimonios</span></a>
-								</li>
-								<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978"><a href="/oylasesores/contacto"><span>Contáctenos</span></a></li>
-							</ul>
-						</nav>
+					<div class='mobile_menu_container'>
+						<div class='fullwidth-wrapper'>
+							<nav class='main-menu'>
+								<ul id="menu-main-menu-3" class="menu">
+									<li class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-1110"><a href="/oylasesores/"><span>Inicio</span></a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-694"><a href="/oylasesores/nosotros"><span>Nosotros</span></a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202"><a href="/oylasesores/servicios"><span>Servicios</span></a></li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-1080"><a href="/oylasesores/clientes"><span>Clientes</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-79"><a href="/oylasesores/preguntasfrecuentes"><span>Preguntas Frecuentes</span></a>
+									</li>
+									<li class="menu-item menu-item-type-custom menu-item-object-custom  menu-item-1111"><a href="/oylasesores/testimonios"><span>Testimonios</span></a>
+									</li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-978"><a href="/oylasesores/contacto"><span>Contáctenos</span></a></li>
+								</ul>
+							</nav>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -1103,10 +1117,10 @@
 				} else {
 					revapi2 = tpj("#rev_slider_2_1").show().revolution({
 						sliderType: "standard",
-						jsFileLocation: "/oylasesores//gt3demo.com/wp/wizelaw/wp-content/plugins/revslider/public/assets/js/",
+						jsFileLocation: "/css/vendor/revslider/public/assets/js/",
 						sliderLayout: "fullwidth",
 						dottedOverlay: "none",
-						delay: 5000,
+						delay: 5000000000,
 						navigation: {
 							keyboardNavigation: "off",
 							keyboard_direction: "horizontal",
@@ -1491,6 +1505,7 @@
 																			<div class="gt3_icon_box__text" style="color: #b9c8d5; text-align: justify;">
 																				<ul>
 																					<li>Cambio de Calidad Migratoria</li>
+																					<li>Solicitud de Visa Temporal y Residente</li>
 																					<li>Prórroga de Permanencia y Residencia</li>
 																					<li>Permiso especial para firmar contrato, permiso especial de viaje y demás gestiones relacionadas a la Inmigración y Nacionalización de Extranjeros.</li>
 																				</ul>

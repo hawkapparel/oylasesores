@@ -3302,3 +3302,64 @@ body .vc_pie_chart .vc_pie_chart_value{
 .circle_photo{
     border-radius: 50px !important;
 }
+
+@media only screen and (max-width: 590px) {
+
+    #rev_slider_2_1_forcefullwidth{
+        height: 350px !important;
+    }
+    #rev_slider_2_1_wrapper{
+        height: 350px !important;
+    }
+    #rev_slider_2_1{
+        max-height: 350px !important;
+        height: 350px !important;
+    }
+
+    #slide-2-layer-3,
+    #slide-3-layer-3,
+    #slide-4-layer-3{
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+    #slide-2-layer-7{
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin: 26px 0 0 0 !important;
+    }
+    #slide-3-layer-7{
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin: 48px 0 0 0 !important;
+    }
+    #slide-4-layer-7{
+        font-size: 20px !important;
+        line-height: 20px !important;
+        margin: 48px 0 0 0 !important;   
+    }
+    #slide-2-layer-6, #slide-2-layer-9{
+        margin: 92px 0 0 0 !important;  
+    }
+    #slide-3-layer-6, #slide-3-layer-9{
+        margin: 110px 0 0 0 !important;    
+    }
+    #slide-3-layer-6, #slide-3-layer-9{
+        margin: 110px 0 0 0 !important;    
+    }
+    #slide-4-layer-6, #slide-4-layer-9{
+        margin: 128px 0 0 0 !important;    
+    }
+    .tp-bgimg, .slotholder, .defaultimg, .tp-revslider-slidesli, .tp-fullwidth-forcer,
+    .tp-parallax-wrap, .slot, .tp-revslider-slidesli, .active-revslide, .tp-revslider-mainul{
+        height: 350px !important;
+        min-height: 350px !important;
+    }
+}
+
+.goog-te-menu-frame{
+    width: 99.9% !important;
+}
+
+iframe.goog-te-menu-frame html body{
+    overflow: scroll !important; 
+}
