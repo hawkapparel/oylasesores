@@ -3363,3 +3363,16 @@ body .vc_pie_chart .vc_pie_chart_value{
 iframe.goog-te-menu-frame html body{
     overflow: scroll !important; 
 }
+
+.team_cover.activeClick{
+    height: 100%;
+}
+
+.team-infobox.activeClick{
+    position: absolute;
+    top: 0px;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    padding: 10px 10px 0 10px;
+}

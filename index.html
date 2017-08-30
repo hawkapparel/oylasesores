@@ -1321,12 +1321,13 @@
 																			<div class="item_wrapper">
 																				<div class="item">
 																					<div class="team_img featured_img">
-																						<a href="http://gt3demo.com/wp/wizelaw/team/karen-d-doe/"><img  src="/oylasesores/images/josue_orduna_780x780.jpg" alt="Karen D. Doe" /></a>
+																						<img  src="/oylasesores/images/josue_orduna_780x780.jpg" alt="Karen D. Doe" />
 																					</div>
 																					<div class="team_cover"></div>
 																					<div class="team-infobox">
 																						<div class="team_title">
-																							<h4><a href="http://gt3demo.com/wp/wizelaw/team/karen-d-doe/">Josué Orduña Torres</a></h4><span class="team-positions"> - <span>Gerente General</span>
+																							<h4>Josué Orduña Torres</h4>
+																							<span class="team-positions"> - <span>Gerente General</span>
 																						</div>
 																						<p style="color:#fff;">Especialista legal en el Derecho Migratorio, con experiencia vivencial en la Superintendencia Nacional de Migraciones; desempeñándose como Gerente General de O&L Asesores.</p>
 																						<div class="team_info">
@@ -1350,7 +1351,8 @@
 																					<div class="team_cover"></div>
 																					<div class="team-infobox">
 																						<div class="team_title">
-																							<h4><a href="http://gt3demo.com/wp/wizelaw/team/john-j-johnson/">Diodoro Orduña Burgos</a></h4><span class="team-positions"> - <span>Consultor Principal</span></span>
+																							<h4>Diodoro Orduña Burgos</h4>
+																							<span class="team-positions"> - <span>Consultor Principal</span></span>
 																						</div>
 																						<p style="color:#fff;">
 																							Especialista legal en el Derecho Migratorio, Civil, Penal y Constitucional.
@@ -2286,6 +2288,27 @@
 			controls: false,
             pager: false
 		});
+
+		var teamCover = document.querySelectorAll(".team_cover");
+
+		for (var i = 0; i < teamCover.length; i++) {
+			teamCover[i].onclick = showGray;
+		}
+
+		function showGray(ev) {
+			console.log(ev);
+			el = ev.target;
+			console.log("elment");
+			console.log(el);
+			nextEl = el.nextElementSibling;
+			console.log("nextt");
+			console.log(nextEl);
+
+			el.classList.toggle("activeClick");
+			nextEl.classList.toogle("activeClick");
+		}
+
+
 	});
 	</script>
 </body>
