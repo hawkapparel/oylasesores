@@ -3358,11 +3358,27 @@ body .vc_pie_chart .vc_pie_chart_value{
 
 #main_header-rss{
     text-align: right;
-    padding: 0 16px;
+    padding: 0 16px 0 0;
     position: fixed;
     right: 0px;
-    background-color: #27323d;
     z-index: 99999;
+    background-color: #27323d;
+    border: none;
+    width: 100%;
+}
+
+@media only screen and (min-width:1200px) {
+
+    #main_header-rss{
+        width: auto;
+        text-align: right;
+        padding: 0 16px 0 0;
+        position: fixed;
+        right: 0px;
+        z-index: 99999;
+        background-color: transparent;
+        border: none;
+    }
 }
 
 #google_translate_element{
@@ -3370,7 +3386,7 @@ body .vc_pie_chart .vc_pie_chart_value{
     position: fixed;
     z-index: 99999;
     right: 28px;
-    top: 116px;
+    top: 100px;
 }
 
 @media only screen and (max-width:1199px) {
@@ -3456,4 +3472,42 @@ body .vc_pie_chart .vc_pie_chart_value{
     -ms-transform: translateY(0) !important;
     transform: translateY(0) !important;
     padding: 10px 10px 0 10px !important;
+}
+
+.btn-nosotros{
+    background-color: #0096dc;
+    color: #fff;
+}
+
+.btn-nosotros a{
+    color: #fff;
+    padding: 24px 0px;
+}
+
+.btn-nosotros:hover{
+    background-color: #fff;
+    color: #0096dc;
+}
+
+.btn-nosotros:hover a{
+    color: #0096dc;
+    padding: 24px 0px;
+}
+
+.btn-contacto{
+    background-color: #fff;
+    color: #0096dc;
+}
+
+.btn-contacto{
+    color: #0096dc;
+}
+
+.btn-contacto:hover{
+    background-color: #0096dc;
+    color: #fff;
+}
+
+.btn-contacto:hover a{
+    color: #fff;
 }
