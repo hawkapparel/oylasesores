@@ -3389,6 +3389,10 @@ body .vc_pie_chart .vc_pie_chart_value{
     top: 100px;
 }
 
+.preguntas .vc_toggle .vc_toggle_content p{
+    text-align: justify;
+}
+
 @media only screen and (max-width:1199px) {
 
     .goog-te-menu-frame{
