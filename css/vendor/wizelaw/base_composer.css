@@ -1055,7 +1055,7 @@
     z-index: 1;
     overflow: hidden;
 }
-.module_team .item_list > li .item_wrapper:hover .item .team_img a img{
+.module_team .item_list > li .item_wrapper:hover .item .team_img img{
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   -ms-filter: grayscale(0%);
@@ -3356,23 +3356,104 @@ body .vc_pie_chart .vc_pie_chart_value{
     }
 }
 
-.goog-te-menu-frame{
-    width: 99.9% !important;
+#main_header-rss{
+    text-align: right;
+    padding: 0 16px;
+    position: fixed;
+    right: 0px;
+    background-color: #27323d;
+    z-index: 99999;
 }
 
-iframe.goog-te-menu-frame html body{
-    overflow: scroll !important; 
+#google_translate_element{
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    right: 28px;
+    top: 116px;
+}
+
+@media only screen and (max-width:1199px) {
+
+    .goog-te-menu-frame{
+        width: 99.9% !important;
+    }
+
+    iframe.goog-te-menu-frame #document html body{
+        overflow: scroll !important; 
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+/*    #main_header-rss{
+        display: none;
+    }*/
+}
+
+@media only screen and (min-width:1200px) {
+
+    #google_translate_element{
+        display: none;
+        position: fixed;
+        z-index: 99999;
+        right: 28px;
+        top: 62px;
+    }
+
+    #main_header-rss{
+        position: absolute;
+    }
+}
+
+.showMenu{
+    display: block !important;
+}
+
+.close-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1;
+    background-color: transparent;
+    border: none;
+    z-index: 9999;
+    padding: 10px;
+}
+
+.close-item:focus{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+@media only screen and (min-width:1200px) {
+    .close-item{
+        display: none;
+    }
+    .item_list {
+        margin: 0 auto;
+        width: 85%;
+    }
+    .item_list .item-team-member{
+        padding: 0 10px !important;
+    }
+    .module_team .team-infobox p{
+        font-size: 12px;
+    }
 }
 
 .team_cover.activeClick{
-    height: 100%;
+    height: 100% !important;
 }
 
-.team-infobox.activeClick{
-    position: absolute;
-    top: 0px;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-    padding: 10px 10px 0 10px;
+.team_cover.activeClick + .team-infobox{
+    position: absolute !important;
+    top: 0px !important;
+    -webkit-transform: translateY(0) !important;
+    -ms-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+    padding: 10px 10px 0 10px !important;
 }
