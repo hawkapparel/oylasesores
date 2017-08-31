@@ -3448,6 +3448,9 @@ body .vc_pie_chart .vc_pie_chart_value{
     background-color: transparent;
     outline: none;
 }
+.module_team .team-infobox p{  
+    text-align: justify;
+}
 
 @media only screen and (min-width:1200px) {
     .close-item{
