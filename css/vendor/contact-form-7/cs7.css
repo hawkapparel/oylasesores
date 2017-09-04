@@ -90,6 +90,26 @@ div.wpcf7 div.ajax-error {
 	display: none;
 }
 
+div.wpcf7oyl .ajax-loader {
+	visibility: hidden;
+	display: inline-block;
+	background-image: url('ajax-loader.gif');
+	width: 16px;
+	height: 16px;
+	border: none;
+	padding: 0;
+	margin: 0 0 0 4px;
+	vertical-align: middle;
+}
+
+div.wpcf7oyl .ajax-loader.is-active {
+	visibility: visible;
+}
+
+div.wpcf7oyl div.ajax-error {
+	display: none;
+}
+
 div.wpcf7 .placeheld {
 	color: #888;
 }

@@ -3518,3 +3518,107 @@ body .vc_pie_chart .vc_pie_chart_value{
 .btn-contacto:hover a{
     color: #fff;
 }
+
+//contact
+
+.wpcf7oyl{
+    margin: 0;
+    padding: 0;
+}
+
+.gt3-form_on-dark-bgoyl{
+    color: #fff;
+}
+
+.wpcf7-form-control-wrapoyl{
+    position: relative;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.gt3-form_on-dark-bgoyl .wpcf7-form-control-wrapoyl{
+    margin-bottom: 15px;
+}
+
+.gt3-form_on-dark-bgoyl input[type="email"], 
+.gt3-form_on-dark-bgoyl input[type="text"],
+.gt3-form_on-dark-bgoyl textarea{
+    background: transparent;
+    padding: 9px 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    border-bottom-color: rgba(255,255,255,0.4);
+}
+
+.wpcf7oyl input[type="email"],
+.wpcf7oyl input[type="text"],
+.wpcf7oyl textarea{
+    width: 100%;
+}
+
+.gt3-form_on-dark-bgoyl input[type="submit"], .gt3-form_on-dark-bgoyl .gt3_submit_wrapperoyl {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #434c55;
+}
+
+.gt3-form_on-dark-bgoyl input[type="submit"]:hover{
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.formResponse{
+    color: #fff;
+    font-weight: bold;
+    visibility: hidden;
+}
+
+.input-error{
+    border-bottom-color: rgb(255, 0, 0) !important;
+}
+
+.show-msg{
+    visibility: visible !important;
+}
+
+.show-loader{
+    visibility: visible !important;
+}
+
+.wpcf7-formoyl ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+.wpcf7-formoyl :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+.wpcf7-formoyl ::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+.wpcf7-formoyl :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+.wpcf7-formoyl ::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #fff;
+}
+
+.contact .formResponse{
+    color: #0096dc !important;
+}
+
+div.wpcf7 .ajax-loader-contact {
+    visibility: hidden;
+    display: inline-block;
+    background-image: url('ajax-loader.gif');
+    width: 16px;
+    height: 16px;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 35px;
+}
